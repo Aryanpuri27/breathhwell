@@ -1,0 +1,384 @@
+.App {
+  text-align: center;
+  color: #070a4b;
+  background: rgb(255, 255, 255);
+  /* background: linear-gradient(
+    162deg,
+    rgba(217, 232, 237, 1) 0%,
+    rgba(167, 241, 231, 1) 14%,
+    rgba(167, 242, 232, 1) 35%,
+    rgba(174, 174, 232, 1) 61%,
+    rgba(246, 188, 199, 1) 100% 
+   );  */
+  /* height: 100vh; */
+  width: 100vw;
+  scrollbar-width: 0;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  /* min-height: 100vh; */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: calc(10px + 2vmin);
+  /* color: rgb(2, 2, 2); */
+  border-bottom: 1px SOLID white;
+  font-weight: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  padding: 7px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+  width: 50px;
+}
+.flex-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-div-11 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flex-div-12 {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  box-shadow: 0 0 5px 0 black;
+  border-radius: 10px;
+  margin: 5px;
+  min-height: 150px;
+}
+
+.nav-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.nav-div span {
+  margin-right: 20px;
+}
+
+/* Styling for unvisited links */
+a {
+  color: #0d141a; /* Purple color, you can change it */
+  /* color: #0d141a; Blue color, you can change it to your preferred color */
+  text-decoration: none; /* Remove the default underline */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Styling for visited links */
+a:visited {
+  color: #0d141a; /* Purple color, you can change it */
+}
+
+/* Styling for links on hover */
+a:hover {
+  color: #0d141a; /* Darker blue on hover, you can change it */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Styling for links when they are clicked */
+a:active {
+  color: #f3f3f3; /* Dark blue on click, you can change it */
+}
+.home-left-section {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+#title {
+  font-size: 40px;
+}
+.home-content {
+  /* max-height: 90vh; */
+  /* overflow: scroll; */
+  overflow-y: auto;
+  width: 50%;
+  text-align: left;
+}
+body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.sidebar {
+  /* position: fixed; */
+  /* top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #333;
+  padding: 20px;
+  width: 200px;
+  color: white; */
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  /* color: #fff; */
+  transition: color 0.3s ease;
+  display: block;
+}
+
+a:hover {
+  color: #00d435;
+}
+
+a.active {
+  color: #00d435;
+}
+
+.active {
+  color: #00d435;
+}
+
+a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #00d435;
+  transition: width 0.3s ease;
+}
+
+a:hover:after,
+a.active:after {
+  width: 100%;
+}
+
+.home-img {
+  max-width: 80%;
+  max-height: 400px;
+}
+
+h1 {
+  font-size: 25px;
+}
+h2 {
+  font-size: 20px;
+}
+
+.aqi-container {
+  display: flex;
+  margin: 20px 0;
+  padding: 20px;
+  /* border: 1px solid black; */
+  box-shadow: 0px 0px 10px 0px black;
+  width: auto;
+  border-radius: 10px;
+  height: 400px;
+  align-items: center;
+}
+
+.round-container {
+  padding: 30px;
+  border-radius: 100%;
+  border: 10px solid green;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+}
+.aqi-value {
+  font-size: 40px;
+}
+.round-container span {
+  /* font-size: 30px; */
+  padding: 5px;
+  margin: 5px;
+  font-weight: bolder;
+}
+.round-container h2 {
+  font-size: 25px;
+  color: #2a2e32b9;
+}
+
+.good-aqi {
+  background-color: #00d435;
+  width: max-content;
+  align-self: center;
+  border-radius: 10px;
+  padding: 5px;
+  color: #000000;
+  font-size: 20px;
+}
+.satisfactory-aqi {
+  background-color: #88be6b;
+  width: max-content;
+  align-self: center;
+  border-radius: 10px;
+  padding: 5px;
+  color: #000000;
+  font-size: 20px;
+}
+.moderate-aqi {
+  background-color: #f6df16;
+  width: max-content;
+  align-self: center;
+  border-radius: 10px;
+  padding: 5px;
+  color: #000000;
+  font-size: 20px;
+}
+.poor-aqi {
+  background-color: #f67316;
+  width: max-content;
+  align-self: center;
+  border-radius: 10px;
+  padding: 5px;
+  color: #000000;
+  font-size: 20px;
+}
+.verypoor-aqi {
+  background-color: #f63416;
+  width: max-content;
+  align-self: center;
+  border-radius: 10px;
+  padding: 5px;
+  color: #000000;
+  font-size: 20px;
+}
+.very-unhealthy-aqi {
+  background-color: #350902;
+  width: max-content;
+  align-self: center;
+  border-radius: 10px;
+  padding: 5px;
+  color: #000000;
+  font-size: 20px;
+}
+
+.good-aqi-c {
+  border: 10px solid #00d435;
+  box-shadow: 0px 0px 14px 0px black;
+}
+.satisfactory-aqi-c {
+  border: 10px solid #88be6b;
+  box-shadow: 0px 0px 14px 0px black;
+}
+.moderate-aqi-c {
+  border: 10px solid #f6df16;
+  box-shadow: 0px 0px 14px 0px black;
+}
+.poor-aqi-c {
+  border: 10px solid #f67316;
+  box-shadow: 0px 0px 14px 0px black;
+}
+.verypoor-aqi-c {
+  border: 10px solid #f63416;
+  box-shadow: 0px 0px 14px 0px black;
+}
+.very-unhealthy-aqi-c {
+  border: 10px solid #350902;
+
+  box-shadow: 0px 0px 14px 0px black;
+}
+
+.loc-container {
+  width: 50%;
+  text-align: start;
+  padding: 30px;
+}
+.city-icon {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+.cityname {
+  font-size: 60px;
+}
+
+.icon {
+  width: 50px;
+}
+.flex-div-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 66px;
+  width: 60%;
+}
+.flex-div-3 {
+  display: flex;
+  align-items: center;
+}
+
+.pol-com {
+  width: 100px;
+  /* height: 130px;  */
+  font-size: 30px;
+  padding: 20px;
+  /* margin: auto; */
+}
+
+.div-5 {
+  max-width: 70%;
+}
+
+.range {
+  width: 100%;
+}
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+.rotating-image {
+  animation: rotate 1s infinite linear; /* You can adjust the duration and animation properties */
+  width: 300px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
